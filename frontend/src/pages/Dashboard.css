@@ -1,0 +1,53 @@
+.dashboard__hero {
+  margin-bottom: var(--space-6);
+}
+
+.dashboard__eyebrow {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+}
+
+.dashboard__title {
+  font-size: var(--text-4xl);
+  margin-bottom: var(--space-2);
+}
+
+.dashboard__subtitle {
+  color: var(--color-ink-muted);
+  font-size: var(--text-base);
+}
+
+.dashboard__seat-card {
+  margin-bottom: var(--space-5);
+}
+
+.dashboard__seat-card-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.dashboard__occupancy-figure {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--color-ink);
+  margin-right: var(--space-2);
+}
+
+.dashboard__occupancy-label {
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+}
+
+.dashboard__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-4);
+}

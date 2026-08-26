@@ -1,0 +1,77 @@
+/*
+  Design tokens for UMaT Smart Library.
+
+  Clean white background with a green accent — readable, straightforward,
+  no dark surfaces to fight with form contrast. Sticking to one typeface
+  (Inter) for both headings and body text keeps things simple rather than
+  layering in a separate display font.
+*/
+
+:root {
+  /* ---- Color: base surfaces ---- */
+  --color-paper: #FFFFFF;         /* page background */
+  --color-surface: #FFFFFF;       /* card surfaces */
+  --color-surface-alt: #F2F8F4;   /* subtle green-tinted alternate surface (table stripes, hover) */
+  --color-nav-bg: #1E5631;        /* navbar — solid dark green bar */
+
+  /* ---- Color: text ---- */
+  --color-ink: #16241C;           /* primary text */
+  --color-ink-soft: #43584B;      /* secondary text */
+  --color-ink-muted: #74897C;     /* tertiary text, captions */
+
+  --color-border: #DDE7E0;        /* hairline borders */
+
+  /* ---- Color: brand ---- */
+  --color-primary: #217A3C;       /* main green — buttons, links, active states */
+  --color-primary-dark: #185C2C;  /* hover/pressed state for primary */
+  --color-primary-contrast: #FFFFFF; /* text placed on top of primary green */
+
+  /* A small pop of yellow against all the green — used sparingly (the
+     navbar's brand mark, "New" badges) rather than as a base color. */
+  --color-yellow: #F2C230;
+  --color-yellow-contrast: #3A2E05;
+  --color-yellow-soft: #FDF3D9;
+
+  /* ---- Color: status vocabulary ---- */
+  --color-sage: #2F9E5C;          /* "available" / success */
+  --color-amber: #C8880D;         /* "filling up" / caution */
+  --color-coral: #C0392B;         /* "full" / danger / errors */
+
+  --color-sage-soft: #E4F5EA;
+  --color-amber-soft: #FBF0DC;
+  --color-coral-soft: #FAE4E1;
+
+  /* ---- Typography ---- */
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+  --text-4xl: 2.75rem;
+
+  /* ---- Spacing scale ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  /* ---- Layout ---- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --shadow-card: 0 1px 3px rgba(22, 36, 28, 0.08);
+  --shadow-card-hover: 0 4px 14px rgba(22, 36, 28, 0.12);
+
+  --max-width: 1180px;
+}

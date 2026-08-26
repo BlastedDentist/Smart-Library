@@ -1,0 +1,121 @@
+.admin__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.admin__title {
+  font-size: var(--text-3xl);
+  margin: var(--space-1) 0;
+  }
+
+.admin__stats {
+  margin-bottom: var(--space-5);
+}
+
+.admin__section-title {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-3);
+  color: var(--color-paper);
+}
+
+.admin__section-caption {
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-4);
+  margin-top: calc(var(--space-3) * -1);
+}
+
+.admin__add-card {
+  margin-bottom: var(--space-5);
+}
+
+.admin__add-form {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.admin__row-btn {
+  padding: 0.45rem 1rem;
+  font-size: var(--text-xs);
+  white-space: nowrap;
+}
+
+.admin__capacity-card {
+  margin-bottom: var(--space-5);
+}
+
+.admin__capacity-form {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.admin__table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.admin__search {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.admin__search input {
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--color-border);
+  background: #FFFFFF;
+  color: var(--color-ink);
+  min-width: 220px;
+}
+
+.admin__search input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.admin__empty {
+  color: var(--color-ink-muted);
+  padding: var(--space-5) 0;
+  text-align: center;
+}
+
+.admin__table-wrap {
+  overflow-x: auto;
+}
+
+.admin__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.admin__table th {
+  text-align: left;
+  padding: var(--space-2) var(--space-3);
+  color: var(--color-ink-muted);
+  font-weight: 600;
+  border-bottom: 1.5px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.admin__table td {
+  padding: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.admin__table tbody tr:hover {
+  background: var(--color-paper);
+}

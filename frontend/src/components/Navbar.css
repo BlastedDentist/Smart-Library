@@ -1,0 +1,85 @@
+.navbar {
+  background: var(--color-nav-bg);
+  padding: var(--space-4) 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-lg);
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.navbar__brand-mark {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background: var(--color-yellow);
+  display: inline-block;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.navbar__link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.navbar__link:hover {
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.navbar__link--active {
+  color: var(--color-primary-dark);
+  background: #FFFFFF;
+}
+
+.navbar__username {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  padding: 0.5rem 0.4rem;
+}
+
+.navbar__logout {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  color: #FFFFFF;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.navbar__logout:hover {
+  border-color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.12);
+}

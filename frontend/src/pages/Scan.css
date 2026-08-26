@@ -1,0 +1,55 @@
+.scan {
+  max-width: 420px;
+  margin: var(--space-7) auto 0;
+}
+
+.scan__card {
+  text-align: center;
+}
+
+.scan__card--form {
+  text-align: left;
+}
+
+.scan__status-icon {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  border-radius: 50%;
+  background: var(--color-sage-soft);
+  color: var(--color-sage);
+  margin: 0 auto var(--space-4);
+}
+
+.scan__status-icon--error {
+  background: var(--color-coral-soft);
+  color: var(--color-coral);
+}
+
+.scan__card--in .scan__status-icon {
+  background: var(--color-sage-soft);
+  color: var(--color-sage);
+}
+
+.scan__card--out .scan__status-icon {
+  background: var(--color-amber-soft);
+  color: var(--color-amber);
+}
+
+.scan__title {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-2);
+}
+
+.scan__message {
+  color: var(--color-ink-muted);
+  margin-bottom: var(--space-2);
+}
+
+.scan__hint {
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+  margin-top: var(--space-3);
+}

@@ -1,0 +1,40 @@
+.form-page {
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.form-page__eyebrow {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+}
+
+.form-page__title {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-2);
+}
+
+.form-page__subtitle {
+  color: var(--color-ink-muted);
+  margin-bottom: var(--space-5);
+}
+
+.form-page__card {
+  margin-top: var(--space-2);
+}
+
+.form-page__footer-link {
+  margin-top: var(--space-4);
+  text-align: center;
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+}
+
+.form-page__footer-link a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: underline;
+}

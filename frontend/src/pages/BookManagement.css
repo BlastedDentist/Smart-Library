@@ -1,0 +1,94 @@
+/* Most of this page reuses the generic admin__* classes from AdminPanel.css
+   (table card, search bar, add-form layout) — this file only covers the
+   parts unique to how books are displayed: a card grid instead of a table,
+   since a book's title/author/description reads better as a small card
+   than as cramped table cells. */
+
+.book-management__add-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-3) var(--space-4);
+  align-items: start;
+}
+
+.book-management__description-field,
+.book-management__add-form > button {
+  grid-column: 1 / -1;
+}
+
+.book-management__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-4);
+}
+
+.book-management__book-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-management__book-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.book-management__book-title {
+  font-size: var(--text-base);
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+.book-management__book-author {
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+}
+
+.book-management__book-badges {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.book-management__book-meta {
+  font-size: var(--text-xs);
+  color: var(--color-ink-muted);
+  margin-bottom: var(--space-2);
+}
+
+.book-management__book-description {
+  font-size: var(--text-sm);
+  color: var(--color-ink-soft);
+  margin-bottom: var(--space-3);
+}
+
+.book-management__book-actions {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.book-management__edit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2) var(--space-3);
+}
+
+.book-management__loans-panel {
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.book-management__borrow-form {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-3);
+}
+
+.book-management__loans-list {
+  margin-top: var(--space-3);
+}

@@ -1,0 +1,28 @@
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14px, 1fr));
+  gap: 7px;
+  padding: var(--space-2) 0;
+}
+
+.seat-dot {
+  aspect-ratio: 1;
+  width: 100%;
+  border-radius: 4px;
+  background: var(--color-surface-alt);
+  border: 1.5px solid var(--color-border);
+  transition: background 0.4s ease, border-color 0.4s ease, transform 0.3s ease;
+}
+
+.seat-dot--occupied {
+  background: var(--color-amber);
+  border-color: var(--color-amber);
+  transform: scale(1.02);
+}
+
+@media (max-width: 640px) {
+  .seat-grid {
+    grid-template-columns: repeat(auto-fill, minmax(11px, 1fr));
+    gap: 5px;
+  }
+}

@@ -1,0 +1,44 @@
+.analytics__title {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-4);
+}
+
+.analytics__callout {
+  background: var(--color-primary);
+  color: #FFFFFF;
+  border: none;
+}
+
+.analytics__callout-label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+  opacity: 0.75;
+  margin-bottom: var(--space-2);
+}
+
+.analytics__callout-text {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+}
+
+.analytics__chart-card {
+  margin-bottom: var(--space-5);
+}
+
+.analytics__chart-title {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-1);
+}
+
+.analytics__chart-caption {
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-4);
+}
+
+.analytics__chart-wrap {
+  height: 280px;
+}
